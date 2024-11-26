@@ -1,4 +1,4 @@
-name: Deploy
+name: CI/CD Pipeline
 
 on:
   push:
@@ -27,9 +27,7 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to Heroku
-      env:
-        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: |
-        git remote add heroku https://git.heroku.com/seu-app-heroku.git
-        git push heroku main
+    # Exemplo de implantação (altere para o seu provedor de hospedagem)
+    # - name: Deploy to Server
+    #   run: |
+    #     scp -r * usuario@servidor:/caminho/do/projeto
