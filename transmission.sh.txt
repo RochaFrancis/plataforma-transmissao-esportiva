@@ -1,0 +1,1 @@
+ffmpeg -re -i input.mp4 -f flv rtmp://SEU_SERVIDOR/live/stream
